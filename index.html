@@ -6,30 +6,71 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="icon/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
 
-  <!-- HEADER PART -->
-
-  <header class="">
-    <section class="">
-
-    </section>
-  </header>
 
   <!-- MAIN PART  -->
 
   <main>
+    <section class="reg">
+      <div class="container">
+        <div class="reg__main">
+          <div class="reg__box">
+            <form class="reg__form" id="form">
+              <label class="reg__label" for="login">
+                <input class="reg__input" id="login" type="text" placeholder="Login">
+                <span id="logerr" class="reg__error"></span>
+              </label>
 
+              <label class="reg__label" for="name">
+                <input class="reg__input" id="name" type="text" placeholder="Name">
+                <span id="namerr" class="reg__error"></span>
+              </label>
+
+              <label class="reg__label" for="mail">
+                <input class="reg__input" id="mail" type="text" placeholder="E-mail">
+                <span id="mailerr" class="reg__error"></span>
+              </label>
+
+              <label class="reg__label" for="number">
+                <input class="reg__input" id="number" maxlength="13" value="+998" type="text" placeholder="+998">
+                <span id="numerr" class="reg__error"></span>
+              </label>
+
+              <label class="reg__label" for="pass">
+                <input class="reg__input" id="pass" type="password" placeholder="Password">
+                <span id="errpass" class="reg__error"></span>
+                <i class="fa fa-eye reg__iconeye" type="button" id="btnpass"></i>
+              </label>
+
+              <label class="reg__label" for="passtwo">
+                <input class="reg__input" id="passtwo" type="password" placeholder="Password">
+                <span id="errpasstwo" class="reg__error"></span>
+                <i class="fa fa-eye reg__iconeye" type="button" id="btnpasstwo"></i>
+              </label>
+
+              <button class="reg__btn" type="submit" id="btnsub"  disabled>Register</button>
+            </form>
+
+            <!-- Signed part -->
+
+            <div id="signed" style="display: none;">
+              <h2 class="reg__title">You are registered successfully</h2>
+              <ul class="reg__list" id="listbox">
+              </ul>
+              <a class="reg__link" href="/">Return to main page</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- FOOTER PART  -->
-
-  <footer class="footer">
-
-  </footer>
 
   <script src="js/main.js"></script>
 </body>
